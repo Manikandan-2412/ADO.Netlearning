@@ -62,3 +62,46 @@ Sqlcommand class:
       Console.WriteLine("Transaction rollbacked");
   }
 =================================================================================================================
+Basic SQL SERVER works
+create table empolyee
+(
+empid int primary key,
+empname varchar(20),
+doj date,
+salary int
+)
+
+select * from empolyee
+
+insert into empolyee values(100,'Manikandan','1-1-2004',50000);
+insert into empolyee values(101,'Alosius','1-1-2005',60000);
+insert into empolyee values(102,'vignesh','1-1-2006',50000);
+insert into empolyee values(103,'Akash','1-1-2004',500000);
+
+delete  from empolyee where empid=106
+=============================================================
+
+Procedure
+==========
+create procedure showemp
+as 
+select * from empolyee
+
+showemp
+
+
+create procedure showempname(@a varchar(20))
+as 
+select * from empolyee where empname = @a
+
+showempname 'Manikandan'
+
+alter procedure showempname(@a varchar(20))
+as 
+select * from empolyee where empname like @a+'%'
+
+showempname 'v'
+
+
+
+=======================================================================
