@@ -29,10 +29,12 @@ Sqlcommand class:
 
 
   Transcation
+  ===========
   Roll back and commit
   Transcation always uses multiple query
-==============================================================================================================
+
   some examples for doing the transcation
+  ======================================
     SqlTransaction tr = null;
 
 
@@ -61,8 +63,9 @@ Sqlcommand class:
       tr.Rollback();
       Console.WriteLine("Transaction rollbacked");
   }
-=================================================================================================================
+
 Basic SQL SERVER works
+======================
 create table empolyee
 (
 empid int primary key,
