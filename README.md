@@ -1,6 +1,6 @@
 # ADO.Netlearning
-
-
+Day3: (Connected Architecture)
+=====
 SQL Connection Class :
 =====================
   if the crentidals is known then go for the  Integrated security using window authentication
@@ -82,6 +82,7 @@ insert into empolyee values(102,'vignesh','1-1-2006',50000);
 insert into empolyee values(103,'Akash','1-1-2004',500000);
 
 delete  from empolyee where empid=106
+
 =============================================================
 
 Procedure
@@ -108,3 +109,31 @@ showempname 'v'
 
 
 =======================================================================
+
+Day 4:(Disconnected Architeture)
+===============================
+All CRUD operation are performed offline
+
+classes are
+
+Sqlconnection 
+SqlDataAdaptor --> holds the sql commands and conncetion (only class interact with the database)
+DataSet        --> holds the result dataset(multiple table) (in memory representation)
+DataTable      --> holds the result dataset(single table)
+DataRow        --> holds the single row 
+DataColumn     --> holds the sibgle column
+
+
+
+diff b/n the sqlDataReader and DataSet
+=======================
+SqlDataReader                                 DataSet
+=======                                       
+connection is required                        not needed
+Read Only                                     Read/Write
+Forward only                                  forward/backward
+Single Table                                  Multiple
+is database specific class                    shared class
+
+
+
