@@ -136,4 +136,71 @@ Single Table                                  Multiple
 is database specific class                    shared class
 
 
+Day5 
+====
+
+Relations:
+=======
+Primary Key             Foreign
+========
+unique                 stores duplicate also
+only one pk            many fk
+not be null            may be null
+
+Linq
+=================================================================
+Objective:
+=====
+
+Intro to Linq
+Linq to object
+Linq to Sql
+Linq to XML
+
+The evolution of C#
+============
+c# 1.0 components on a managed Runtime
+c# 2.0 Generies
+c# 3.0 Language integrated query(LINQ)
+LINQ
+====
+Linq follows common programming model.irrespective data source application uses
+===========
+Data Sources
+=====
+dataset
+sql
+Xmlfiles
+collection / generies
+file
+data properties
+
+to work with XMl files the XmlDocument class is used 
+Drawbacks of before technique LINQ
+============================
+Developer need to learn new model for every requirement
+if the source changes the existing model may not work
+
+Advantage of LINQ
+======
+follows sql like syntax like select,where,like,etc
+supports joins
+supports intellisense
+
+Linq classification
+=======
+Linq to object --> L2O (Arrays,Collections,Custom Classes,Active Directory,Objects)
+Linq to SQL --> L2S
+Linq to XML --> L2X
+
+
+Deferred Execution 
+============
+only executed after the foreach is called
+is not get immediately executed
+().toList() is used for the immediate execution
+
+Linq can be created in two different ways
+Query Expressions --> intro in 3.0
+Lambda Expressions --> intro in 3.5
 
